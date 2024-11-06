@@ -1,17 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 void main()
 {
-    int mrk;
-    scanf("%d",&mrk);
-    if(mrk>=90)
-        printf("GRADE A");
-    else if(mrk>=80 && mrk<=89)
-        printf("GRADE B");
-     else if(mrk>=70 && mrk<=79)
-        printf("GRADE C");
-     else if(mrk>=60 && mrk<=69)
-        printf("GRADE D");
-     else
-            printf("GRADE F");
 
+    char value;
+    scanf("%c",value);
+    if(value>='A' && value<='Z')
+        value=value+32;
+    else if(value>='a' && value<='z')
+        value=value-32;
+    printf("VALUE IS:%c",value);
 }
